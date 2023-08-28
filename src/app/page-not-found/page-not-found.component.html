@@ -1,0 +1,14 @@
+<h2 class = "center">404 Page Not Found!</h2>
+<div class = "p-2">
+<label for = "ID">Enter your Id:</label>
+<input type = "number" id = "ID" [(ngModel)] = "idValue">
+</div>
+<div class = "p-2">
+<label for="email">Enter EmailAddress:</label>
+<input type = "email" id = "email" [(ngModel)] = "emailValue">
+</div>
+<div class = "p-2">
+<button (click) = "onSave()">Save</button>
+<button (click) = "onCancel()">Cancel</button>
+<button (click) = "onDelete()">Delete</button>
+</div>

@@ -1,0 +1,31 @@
+body {
+    background-color: #F1F3F6;
+    padding: 70px; 
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.container li {
+    display: inline;
+    font-size: larger;
+    list-style-type: none;
+}
+.container li a {
+    text-decoration: none;
+    color:brown;
+    padding:10px 200px;
+}
+.container li a:hover {
+    background-color: rgba(255, 217, 0, 0.555);
+}
+.container li a:active {
+    background-color: goldenrod;
+}
+h3 {
+    padding: 50px;
+}
+.RouterLinkActiceCSS{
+    background-color: gold;
+}

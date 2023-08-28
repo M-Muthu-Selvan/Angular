@@ -1,0 +1,44 @@
+form {
+    display: inline-block;
+}
+.container {
+    border: 2px solid gold;
+    border-radius:20px;
+    padding: 50px 0px;
+    background-color: rgb(101, 101, 250);
+}
+.contain{
+    border: 2px solid rgb(101, 101, 250);
+    border-radius:20px;
+    padding: 50px 0px;
+    background-color: gold;
+}
+.h2{
+    color: gold;
+}
+.span {
+    color : blue;
+}
+.body {
+    text-align: center;
+    padding: 8% 20%;
+    background-color: #DBDBDB;
+  }
+
+.noValueGreen{
+    border: 2px solid green;
+}
+
+.valueGold{
+    border: 2px solid gold;
+}
+.selected::before {
+    content: "\2713";
+    margin-right: 5px;
+  }
+  .removedot{
+    list-style-type: none;
+  }
+  .removedot:hover{
+    cursor: pointer;
+  }

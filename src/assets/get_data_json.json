@@ -1,0 +1,597 @@
+
+{
+	"statusCode": 200,  
+	"response": {
+		"status": true,
+		"code": 200,
+		"message": "",
+		"data": [
+			{
+				"totalPage": 15,
+				"data": [
+					{
+						"id": 222,
+						"uploadTitle": "s",
+						"DLP": "2023-08-07",
+						"fromDate": "2023-08-06",
+						"toDate": "2023-08-07",
+						"reportsource": "s",
+						"fieldnames": [
+							{
+								"fieldName": "Case Num",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Initial Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Followup Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Report Type",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Country of Incidence",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Units",
+                                "isSelected":false
+							},
+							{
+								"fieldName": "Patient Age Group",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Gender",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Dosage Regimen Batch / Lot #",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Start Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Stop Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Preferred Term",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event System Organ Class",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "As Determined Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Seriousness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Seriousness?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Agent Causality?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Narrative",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Comment Text",
+                                "isSelected": false
+							}
+						],
+						"documentLocation": "appData\\\\padder\\\\caseList\\\\222202381023009-Financial Sample.xlsx",
+						"productId": 2,
+						"versionNumber": null,
+						"createUserId": "1",
+						"updateUserId": 0,
+						"updateDate": null,
+						"ipAddress": "127.0.0.1",
+						"deviceid": "Test-device",
+						"fileName": "202381023009-Financial Sample.xlsx",
+						"deleteHeaderComment": null,
+						"status": 1,
+						"createdDate": "2023-08-10T09:06:21.000Z",
+						"deletedDate": null,
+						"deletedAt": null,
+						"createdAt": "2023-08-10T09:06:21.000Z",
+						"updatedAt": "2023-08-10T09:06:22.000Z",
+						"tblProducts": [
+							{
+								"productId": 2,
+								"brandName": "Paracetamol"
+							}
+						]
+					},
+					{
+						"id": 221,
+						"uploadTitle": "h",
+						"DLP": "2023-08-07",
+						"fromDate": "2023-08-01",
+						"toDate": "2023-08-07",
+						"reportsource": "h",
+						"fieldnames": [
+							{
+								"fieldName": "Case Num",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Initial Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Followup Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Report Type",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Country of Incidence",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Units",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Group",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Gender",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Dosage Regimen Batch / Lot #",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Start Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Stop Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Preferred Term",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event System Organ Class",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "As Determined Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Seriousness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Seriousness?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Agent Causality?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Narrative",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Comment Text",
+                                "isSelected": false
+							}
+						],
+						"documentLocation": "appData\\padder\\caseList\\221202381053739-Financial Sample.xlsx",
+						"productId": 1,
+						"versionNumber": 6,
+						"createUserId": "1",
+						"updateUserId": 0,
+						"updateDate": null,
+						"ipAddress": "127.0.0.1",
+						"deviceid": "Test-device",
+						"fileName": "202381053739-Financial Sample.xlsx",
+						"deleteHeaderComment": null,
+						"status": 1,
+						"createdDate": "2023-08-10T09:04:35.000Z",
+						"deletedDate": null,
+						"deletedAt": null,
+						"createdAt": "2023-08-10T09:04:36.000Z",
+						"updatedAt": "2023-08-10T09:04:36.000Z",
+						"tblProducts": [
+							{
+								"productId": 1,
+								"brandName": "Paracetamol"
+							}
+						]
+					},
+					{
+						"id": 219,
+						"uploadTitle": "s",
+						"DLP": "2023-08-14",
+						"fromDate": "2023-08-13",
+						"toDate": "2023-08-14",
+						"reportsource": "s",
+						"fieldnames": [
+							{
+								"fieldName": "Case Num",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Initial Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Followup Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Report Type",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Country of Incidence",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Units",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Group",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Gender",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Dosage Regimen Batch / Lot #",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Start Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Stop Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Preferred Term",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event System Organ Class",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "As Determined Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Seriousness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Seriousness?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Agent Causality?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Narrative",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Comment Text",
+                                "isSelected": false
+							}
+						],
+						"documentLocation": "appData\\\\padder\\\\caseList\\\\21920238911321-Financial Sample.xlsx",
+						"productId": 1,
+						"versionNumber": null,
+						"createUserId": "1",
+						"updateUserId": 0,
+						"updateDate": null,
+						"ipAddress": "127.0.0.1",
+						"deviceid": "Test-device",
+						"fileName": "20238911321-Financial Sample.xlsx",
+						"deleteHeaderComment": null,
+						"status": 1,
+						"createdDate": "2023-08-09T06:49:40.000Z",
+						"deletedDate": null,
+						"deletedAt": null,
+						"createdAt": "2023-08-09T06:49:40.000Z",
+						"updatedAt": "2023-08-09T06:49:41.000Z",
+						"tblProducts": [
+							{
+								"productId": 1,
+								"brandName": "Paracetamol"
+							}
+						]
+					},
+					{
+						"id": 218,
+						"uploadTitle": "case 2",
+						"DLP": "2023-08-05",
+						"fromDate": "2023-08-02",
+						"toDate": "2023-08-05",
+						"reportsource": "h",
+						"fieldnames": [
+							{
+								"fieldName": "Case Num",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Initial Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Followup Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Report Type",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Country of Incidence",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Units",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Group",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Gender",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Dosage Regimen Batch / Lot #",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Start Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Stop Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Preferred Term",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event System Organ Class",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "As Determined Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Seriousness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Seriousness?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Agent Causality?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Narrative",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Comment Text",
+                                "isSelected": false
+							}
+						],
+						"documentLocation": "appData\\\\padder\\\\caseList\\\\21820238967148-Financial Sample.xlsx",
+						"productId": 1,
+						"versionNumber": null,
+						"createUserId": "1",
+						"updateUserId": 0,
+						"updateDate": null,
+						"ipAddress": "127.0.0.1",
+						"deviceid": "Test-device",
+						"fileName": "20238967148-Financial Sample.xlsx",
+						"deleteHeaderComment": null,
+						"status": 1,
+						"createdDate": "2023-08-09T06:39:30.000Z",
+						"deletedDate": null,
+						"deletedAt": null,
+						"createdAt": "2023-08-09T06:39:30.000Z",
+						"updatedAt": "2023-08-09T06:39:31.000Z",
+						"tblProducts": [
+							{
+								"productId": 1,
+								"brandName": "Paracetamol"
+							}
+						]
+					},
+					{
+						"id": 217,
+						"uploadTitle": "sj",
+						"DLP": "2023-08-08",
+						"fromDate": "2023-08-01",
+						"toDate": "2023-08-08",
+						"reportsource": "da",
+						"fieldnames": [
+							{
+								"fieldName": "Case Num",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Initial Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Followup Receipt Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Report Type",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Country of Incidence",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Units",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Age Group",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Patient Gender",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Dosage Regimen Batch / Lot #",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Start Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Stop Date",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Preferred Term",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event System Organ Class",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "As Determined Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Event Seriousness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Seriousness?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Listedness",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Agent Causality?",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Case Narrative",
+                                "isSelected": false
+							},
+							{
+								"fieldName": "Company Comment Text",
+                                "isSelected": false
+							}
+						],
+						"documentLocation": "appData\\padder\\caseList\\20238955143-Financial Sample.xlsx",
+						"productId": 2,
+						"versionNumber": 5,
+						"createUserId": null,
+						"updateUserId": 0,
+						"updateDate": null,
+						"ipAddress": "127.0.0.1",
+						"deviceid": "Test-device",
+						"fileName": "20238955143-Financial Sample.xlsx",
+						"deleteHeaderComment": null,
+						"status": 1,
+						"createdDate": "2023-08-09T06:32:08.000Z",
+						"deletedDate": null,
+						"deletedAt": null,
+						"createdAt": "2023-08-09T06:32:08.000Z",
+						"updatedAt": "2023-08-09T06:32:08.000Z",
+						"tblProducts": [
+							{
+								"productId": 2,
+								"brandName": "Paracetamol"
+							}
+						]
+					}
+				],
+				"currentPage": "1"
+			}
+		]
+	}
+}

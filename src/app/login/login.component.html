@@ -1,0 +1,163 @@
+<router-outlet></router-outlet>
+<div class="container-fluid body">
+    <div class="container"
+        [ngClass]="!loginEmail ?(loginEmail ? 'contain':'container'):(loginPassword ? 'container': 'contain')">
+        <h2 class="h2" [ngClass]="!loginEmail ? (loginEmail ? 'span' : 'h2'): (loginPassword ? 'h2':'span')">FlipKart
+        </h2>
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" method="get" ngNativeValidate>
+            <!-- <div *ngIf="isTyping">Typing...</div> -->
+            <!-- {{loginEmail}} -->
+            <input name="email" type="email" [(ngModel)]="loginEmail" id="name" class="form-control" size="50"
+                placeholder="Enter Email" maxlength="50" required [ngClass]="loginEmail ? 'noValueGreen' : 'valueGold'">
+
+            <label for="name" class="form-label"></label>
+
+            <input class="form-control" [(ngModel)]="loginPassword" id="Password" type="password" name="Password"
+                placeholder="Enter Password" size="50" maxlength="50"
+                [ngClass]="loginPassword ? 'noValueGreen': 'valueGold'" required>
+            <label for="Password" class="form-label"></label>
+            <input *ngIf="loginEmail && loginPassword" type="submit" [disabled]="!loginEmail"
+                class="mt-4 btn btn-warning" value="login">
+        </form>
+    </div>
+</div>
+
+<button class = "btn btn-primary" (click) = "toSample()">Go To Sample Page</button>
+<button class = "btn btn-danger" routerLink="/samesample" [queryParams]="{name: 'Muthu'}">Go To SameSample Page</button>
+
+<table class = "table table-bordered">
+    <thead class = "table-primary">
+        <tr>
+            <td>ID</td>
+            <td>UPLOAD TITLE</td>
+            <td>FROM DATE</td>
+            <td>TO DATE</td>
+            <td>DLP</td>
+            <td>REPORT SOURCE</td>
+            <td>PRODUCT ID</td>
+            <td>CREATED AT</td>
+            <td>UPDATED AT</td>
+            <td>fieldNames</td>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor = "let allDetails of objData.response.data[0].data;">
+        <tr>
+            <td>{{allDetails.id}}</td>
+            <td>{{allDetails.uploadTitle}}</td>
+            <td>{{allDetails.fromDate | date:'mediumDate'}}</td>
+            <td>{{allDetails.toDate | date:'mediumDate'}}</td>
+            <td>{{allDetails.DLP | date:'mediumDate'}}</td>
+            <td>{{allDetails.reportsource}}</td>
+            <td>{{allDetails.productId}}</td>
+            <td>{{allDetails.createdAt | date:'medium'}}</td>
+            <td>{{allDetails.updatedAt | date:'medium'}}</td>
+            <td>
+                <ul class = "removedot">
+                    <li  *ngFor="let f_name of allDetails.fieldnames" (click)="toggleTick(f_name)">
+                    <span  [ngClass]="f_name.isSelected ? 'selected' : ''">{{ f_name.fieldName }}</span>
+                </li>
+                </ul>
+            </td>
+        </tr>
+    </ng-container>
+    </tbody>
+</table>
+<!-- <div *ngFor = "let allDetails of objData.response.data[0].data">
+    {{allDetails.id}} -->
+    <!-- {{objData.response.data[0].data[0].uploadTitle}}
+    {{objData.response.data[0].data[0].DLP}}
+    {{objData.response.data[0].data[0].fromDate}} -->
+<!-- </div> -->
+
+<!-- <div *ngFor = "let allDetails of objData.response.data[0].data[0].fieldnames">
+    {{allDetails.fieldName}}
+</div> -->
+
+<!-- <div>
+    <label for = "textinput">Enter Your Name:</label>
+<input id = "textinput" type = "text" #getvalue>
+<button (click) = "myFunction(getvalue.value)">add to parent</button>
+</div>
+<div *ngFor="let item of name">{{ item }}</div> -->
+
+
+<!-- <table class = "table table-bordered">
+    <thead class = "table-primary">
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Age</th>
+        <th>Employee Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor = "let details of storeEmployeeDetails">
+        <td>{{details.e_id}}</td>
+        <td>{{details.e_name}}</td>
+        <td>{{details.e_age}}</td>
+        <td>{{details.e_salary}}</td>
+    </tr>
+</tbody>
+</table> -->
+
+
+<!-- {{day | date:'EEEE, MMMM d, y, hh:mm:ss a zzzz'}}
+{{anyNumber | number:'4,1-2'}}
+{{Rupee | currency:'INR'}}
+{{myName | uppercase}}
+{{myName | lowercase}}
+{{myName | titlecase}}
+{{obj | keyvalue | json}}
+</div>
+{{obj | json}}
+{{arr | slice:3}}
+<input type="text" [(ngModel)]="value" />
+{{value}} -->
+
+
+
+<!--<div [ngSwitch]="value">
+    <div *ngSwitchCase="'A'">A</div>
+    <div *ngSwitchCase="'B'">B</div>
+    <div *ngSwitchCase="'C'">C</div>
+</div>
+<ng-container *ngFor="let list of inputBoxVal; let first = first; let last = last">
+    {{first}}
+    <div class="btn btn-primary" [ngClass]="first ? 'btn-warning': last ? 'btn-warning':'btn-primary'">
+        <h2>{{list.data}}</h2>
+    </div>
+</ng-container>
+<ng-container *ngFor="let performance of studentMark; let rank1 = first; let rank7 = last">
+    <ul *ngIf="tableElement" [ngSwitch]="performance.rank"
+        [ngClass]="rank1 ? 'text-success': rank7 ? 'text-danger': 'text-info'">
+        <li *ngSwitchCase="1">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="2">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="3">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="4">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="5">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="6">{{performance.name}} ({{performance.total}})</li>
+        <li *ngSwitchCase="7">{{performance.name}} ({{performance.total}})</li>
+    </ul>
+</ng-container>
+<button (click)="showElement()">showTable</button>
+<button (click)="hideElement()">hideTable</button>
+------------------------------------
+<ng-container *ngFor="let performance of studentMark; let rank1 = first; let rank7 = last">
+    <ul *ngIf="performance.total > 300" [ngClass]="performance ? 'text-success': 'text-danger'">
+        <li>{{performance.name}} ({{performance.total}})</li>
+    </ul>
+    <ul *ngIf="performance.total <= 300" [ngClass]="performance ? 'text-danger': 'text-success'">
+        <li>{{performance.name}} ({{performance.total}})</li>
+    </ul>
+</ng-container>
+<div class="p-3 bg-info" [ngClass]="inputName ? 'bg-info':'bg-danger'">
+    <input type="text" [(ngModel)]="inputName" />
+</div>
+<div *ngFor="let item of reduce | keyvalue">
+    {{ item.key }}: {{ item.value }}
+</div>
+
+<p>
+    Content : {{text}}
+</p>-->

@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<app-category></app-category>
+<app-slider></app-slider>
+<app-product></app-product>
+
+<table class = "table">
+    <thead class = "table-danger">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let getinfo of getDetails">
+            <td>{{getinfo.e_id}}</td>
+            <td>{{getinfo.e_name}}</td>
+            <td>{{getinfo.e_age}}</td>
+            <td>{{getinfo.e_salary}}</td>
+        </tr>
+    </tbody>
+</table>

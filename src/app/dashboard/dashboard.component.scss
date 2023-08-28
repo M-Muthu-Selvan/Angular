@@ -1,0 +1,26 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.nav {
+    background-color: aqua;
+}
+li {
+    display: inline;
+    padding: 20px;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color:chocolate;
+}
+li a:hover{
+    background-color: aquamarine;
+}
+li a:active {
+    background-color: cadetblue;
+}
+p {
+    text-align: center;
+    padding-top: 50px;
+}
+.last {
+    text-align: end;
+}
