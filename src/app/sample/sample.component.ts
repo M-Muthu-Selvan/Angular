@@ -18,6 +18,13 @@ export class SampleComponent implements OnInit {
   }
 
   dataArray:any = [];
+  sampleForm:any = [
+    {
+    componentName: '',
+    unitId : '',
+    strength: ''
+  }
+]
 
   ngOnInit() {
     this.idCheck.getJsonPlaceHolder().then((res:any) => {
@@ -60,6 +67,17 @@ export class SampleComponent implements OnInit {
       console.log("Error Updating Data:", err);
      })
 
+}
+
+addNewFieldGroup() {
+  this.sampleForm.push({ componentName: '', unitId: '', strength: '' });
+  console.log(this.sampleForm);
+}
+
+allFieldsFilled() {
+  return this.sampleForm.every((fieldGroup:any) =>
+    fieldGroup.componentName && fieldGroup.unitId && fieldGroup.strength
+  );
 }
 
 }

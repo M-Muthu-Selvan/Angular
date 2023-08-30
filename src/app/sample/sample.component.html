@@ -1,4 +1,4 @@
-<h3 align = "center">This is sample page</h3>
+<h3 align="center">This is sample page</h3>
 <table class="table">
     <thead class="table-danger">
         <tr>
@@ -9,68 +9,89 @@
             <th>COMPANYNAME</th>
         </tr>
     </thead>
-    <tbody class = "table-warning">
+    <tbody class="table-warning">
         <tr *ngFor="let arrayValue of dataArray[0]">
-            <td>{{arrayValue.id}}</td>
-            <td>{{arrayValue.name}}</td>
-            <td>{{arrayValue.email}}</td>
-            <td>{{arrayValue.address.city}}</td>
-            <td>{{arrayValue.company.name}}</td>
+            <td>{{ arrayValue.id }}</td>
+            <td>{{ arrayValue.name }}</td>
+            <td>{{ arrayValue.email }}</td>
+            <td>{{ arrayValue.address.city }}</td>
+            <td>{{ arrayValue.company.name }}</td>
         </tr>
     </tbody>
-</table>
+    </table>
 <!-- <div><a routerLink="**">Add User</a></div> -->
-<form #forpost = "ngForm" (ngSubmit)="onSubmit(forpost.value)" ngNativeModel>
+<form #forpost="ngForm" (ngSubmit)="onSubmit(forpost.value)" ngNativeModel>
     <h3>Add Another Person</h3>
-<div>
-    <label for = "name">Enter Name:</label>
-    <input type = "text" id = "name" name = "name" ngModel>
-</div>
-<div>
-    <label for = "email">Enter Your Email:</label>
-    <input type = "email" id = "email" name = "email" ngModel>
-</div>
-<div>
-    <label for = "city">Enter city:</label>
-    <input type = "text" id = "city" name = "city" ngModel>
-</div>
-<div>
-    <label for = "company">Enter Company Name:</label>
-    <input type = "text" id = "company" name = "company" ngModel>
+    <div>
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" name="name" ngModel />
+    </div>
+    <div>
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" ngModel />
+    </div>
+    <div>
+        <label for="city">Enter city:</label>
+        <input type="text" id="city" name="city" ngModel />
+    </div>
+    <div>
+        <label for="company">Enter Company Name:</label>
+        <input type="text" id="company" name="company" ngModel />
+    </div>
+
+    <input type="submit" name="submit" value="submit" />
+</form>
+<form #forput="ngForm" ngNativeModel>
+    <h3>Update Existing Person</h3>
+    <div>
+        <label for="upid">Enter Id:</label>
+        <input type="number" id="upid" name="upid" ngModel />
+    </div>
+    <div>
+        <label for="upname">Enter Name:</label>
+        <input type="text" id="upname" name="upname" ngModel />
+    </div>
+    <div>
+        <label for="upemail">Enter Your Email:</label>
+        <input type="email" id="upemail" name="upemail" ngModel />
+    </div>
+    <div>
+        <label for="upcity">Enter city:</label>
+        <input type="text" id="upcity" name="upcity" ngModel />
+    </div>
+    <div>
+        <label for="upcompany">Enter Company Name:</label>
+        <input type="text" id="upcompany" name="upcompany" ngModel />
+    </div>
+
+    <button (click)="onClick(forput.value)">Update</button>
+    <button>Delete</button>
+</form>
+<div class="grid col-12">
+    <div class="col-9">
+        <ng-container *ngFor="let fieldGroup of sampleForm; let i = index">
+                <div class="col-3">
+                    <label>Component Name:</label>
+                    <input type="text" pInputText [(ngModel)]="fieldGroup.componentName" name="componentName{{i}}" />
+                </div>
+                <div class="col-3">
+                    <label>Unit Id:</label>
+                    <input type="text" pInputText [(ngModel)]="fieldGroup.unitId" name="unitId{{i}}" />
+                </div>
+                <div class="col-3">
+                    <label>Strength:</label>
+                    <input type="text" pInputText [(ngModel)]="fieldGroup.strength" name="strength{{i}}" />
+                </div>
+        </ng-container>
+    </div>
+    <div class="col-3">
+        <p-button label="Add New" [disabled]="!allFieldsFilled()" (click)="addNewFieldGroup()" styleClass="p-button-outlined p-button-help"></p-button>
+    </div>
 </div>
 
-<input type = "submit" name = "submit" value = "submit">
-</form>
-<form #forput = "ngForm" ngNativeModel>
-<h3>Update Existing Person</h3>
-<div>
-    <label for = "upid">Enter Id:</label>
-    <input type = "number" id="upid" name = "upid" ngModel>
-</div>
-<div>
-    <label for = "upname">Enter Name:</label>
-    <input type = "text" id = "upname" name = "upname" ngModel>
-</div>
-<div>
-    <label for = "upemail">Enter Your Email:</label>
-    <input type = "email" id = "upemail" name = "upemail" ngModel>
-</div>
-<div>
-    <label for = "upcity">Enter city:</label>
-    <input type = "text" id = "upcity" name = "upcity" ngModel>
-</div>
-<div>
-    <label for = "upcompany">Enter Company Name:</label>
-    <input type = "text" id = "upcompany" name = "upcompany" ngModel>
-</div>
-
-<button (click) = "onClick(forput.value)">Update</button>
-<button>Delete</button>
-</form>
 
 <!-- <h3>User List:</h3>
 <div *ngFor = "let listPerson of dummyArray">
 <div>Name: {{listPerson.name}}</div>
 <div>Company: {{listPerson.company}}</div>
 </div> -->
-

@@ -5,6 +5,8 @@ import { SampleRoutingModule } from './sample-routing.module';
 import { ServiceService } from '../services/service.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { InputTextModule } from 'primeng/inputtext';
+import {  ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     SampleRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    InputTextModule,
+    ButtonModule
   ],
   exports: [SampleComponent],
   providers:[ServiceService]
